@@ -1,0 +1,98 @@
+@mixin floor_a{  &:hover{
+    box-shadow:0px 0px 4px 3px #ccc;
+    transform:translateY(-10px)
+    }}
+#floor #floor03{
+    width:1200px;
+    height:310px;
+    position:relative;
+    margin-bottom:30px;
+    overflow:hidden;
+    a.lr{
+        position:absolute;
+        top:32%;
+        left:0;
+        width:1.5rem;
+        height:4rem;
+        background:#f0f0f0;
+        text-align:center;
+        line-height:4rem;
+        border-radius:5px;
+        &:hover{
+            background:rgba(0,0,0,0.6);    
+        }
+    }
+    a.lr2{
+        top:32%;
+        left:98%;
+    }
+    ul.floor03-ul{
+        height:311px;
+        li:first-child{
+            margin:0;padding:0;
+        }
+        li.floor03-item{
+            float:left; 
+            width:242px;
+            box-sizing:border-box;
+            a{
+                width:232px;
+                height:295px;
+                display:inline-block;
+                background:#fff;
+                border-radius:20px;
+                text-align:center;
+                margin-top:10px;
+                @include floor_a;
+                transition:all 0.5s linear;
+                span{
+                    display:block;
+                    padding: 0 9px;
+                    margin: 0 auto;
+                    height: 22px;
+                    width:44px;
+                    box-sizing:border-box;
+                    line-height: 22px;
+                    color: #fff;
+                    border-radius: 0 0 6px 6px;
+                    background:#FF6A6E;
+                }
+                div:nth-child(2){
+                    width:230px;
+                    height:205px;
+                    position:relative;
+                    text-align:center;
+                    margin:20px 0 0 0;
+                    margin-right:0px;
+                   
+                img{
+                    width:150px;
+                    height:150px;
+                }
+                p{
+                    font-size: 14px;
+                    line-height: 36px;
+                    position: absolute;
+                    bottom: 0px;
+                    width: 100%;
+                    background: #f3f3f3;
+                    color: #777;
+                 }
+                }
+                div:nth-child(3){
+                    color:#333;
+                    height: 24px;
+                    padding-top:10px;
+                    background:#fcfcfc;
+                    width:231px;
+                }
+                p:last-child{
+                    font-size:14px;
+                    color: #d0021b;
+                    line-height: 21px;
+                    background:#fcfcfc;
+                }
+              }
+            }      
+    }
+}

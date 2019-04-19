@@ -1,0 +1,240 @@
+/* 顶部img的close()  */
+ *{margin:0;padding:0}
+ ul{
+     list-style:none;
+ }
+ a{
+     text-decoration:none;
+ }
+ /* fixed固定的影藏得搜索框 */
+ div.scroll{
+    width:100%;
+    height:4rem;
+    background:#e00012;
+    position:fixed;
+    justify-content:space-around;
+    z-index:9;
+    display:none;
+}
+div.scroll div.scroll-item{
+    width:100%;
+    height:100%;
+    display:flex;
+    justify-content:space-around;
+}
+div.scroll div.scroll-item img{
+    width:22rem;
+    height:4rem;
+}
+div.scroll div.scroll-item input{
+    width:30rem;
+    height:3rem;
+    margin-top:0.5rem;
+     border-radius:2rem;
+     border:0;
+     outline-style:none;
+     text-indent:2em;
+}   
+/* 顶部关闭的a图片 */
+ div.my_img>a{
+    position:absolute;top:1rem;left:98rem;
+    color:#fff;
+    text-decoration:none;
+    line-height:auto;
+ }
+ #navbar a,span{
+   text-decoration:none;  
+   color:#a4a4a4;
+   font-size:0.8rem;
+}
+#navbar{
+    margin-left:0rem;
+    padding-top:0.4rem;
+    width:100%;
+    height:2.5rem;
+    display:flex;
+    background:#f9f9f9;
+}
+#navbar a:hover{
+    color:red;
+}
+ /*动态拖拽效果图*/
+ #dynamic span{
+    position:fixed;
+    background-image:url('../../img/top-dynamic/timg.gif');
+    width:13.7rem;
+    height:15rem;
+    z-index:10;
+    background-size:cover;
+}  
+/* 目标滑动 */
+#carousel{
+   width:100%;
+   height:550px;
+   overflow:hidden;
+}
+#carousel div.carousel-inner{
+    width:100%;
+    height:550px;
+    margin:0 auto;
+    position:relative;
+}
+#carousel div.carousel-inner ul.carousel-item  li{
+    float:left;
+}
+#carousel div.carousel-inner ul.carousel-item li img{
+    width:1920px;
+}
+#carousel div.carousel-inner ul.origin{
+    position:absolute;
+    bottom:17%;
+    left:85%;
+    width:100px;
+    height:20px;
+    line-height:20px;
+}
+#carousel div.carousel-inner ul.origin li{
+     float:left;
+     margin-left:10px;
+}
+#carousel div.carousel-inner ul.origin li a{
+    display:inline-block;
+    width:0.6rem;
+    height:0.6rem;
+    border-radius:50%;
+    border:2px solid #f0f0f0;  
+}
+#carousel div.carousel-inner>a{
+   position:absolute;
+   width:3.5rem;
+   height:3.5rem;
+   top:13rem;
+   left:100rem;
+   background:rgba(0,0,0,0.1);
+   text-align:center;
+   line-height:3.8rem;
+   border-radius:50%;
+}
+#carousel div.carousel-inner>a.prev{
+    top:13rem;
+    left:36rem;
+}
+#carousel div.carousel-inner>a:hover{
+    background:rgba(0,0,0,0.3); 
+}
+.active1{
+    background:#fff;
+    box-shadow:0px 0px 3px 5px rgba(255,255,255,0.3);
+}
+/* 轮播样式结束 */
+ /* 轮播侧向导航链接 */
+ #carousel #aside{
+    width:13rem;
+    height:30rem;
+    background:#fbf5f5;
+    list-style:none;
+    position:absolute;
+    top:0rem;left:22rem;
+    z-index:5;
+    border-radius:0.8rem;
+}
+#carousel #aside li{
+ width:100%;
+ height:5rem;
+ position:relative;
+ padding:0rem;
+}
+#carousel #aside li:first-child{
+border-top-left-radius:0.8rem;
+border-top-right-radius:0.8rem;
+}
+#carousel #aside li:last-child{
+    border-bottom-left-radius:0.8rem;
+    border-bottom-right-radius:0.8rem;
+    }
+#carousel #aside li:hover{
+    width:100%;
+    background:#fff;
+} 
+#carousel #aside li div:first-child{
+      padding-top:1rem;
+}
+#carousel #aside li div:last-child{
+    position:absolute;
+    width:60%;
+    height:1px;
+    background:#a8a8a8;
+    bottom:0;
+}
+#carousel #aside li div{
+    margin-left:1.5rem;
+}
+#carousel #aside li div a{
+     text-decoration:none;
+     color:#000;
+ }
+ #carousel #aside li div a span:hover{
+    color:red;
+ }
+ #carousel #aside li:last-child div:last-child{
+     display:none;
+ }
+ #carousel #aside li div:nth-child(1) a span{
+     font-size:1rem;
+ }
+ #carousel #aside li div:nth-child(2){
+     margin-top:0.3rem;
+ }
+ /* <!-- 轮播上隐藏的侧边链接 --> */
+ #carousel div.aside-item ul{
+    position:absolute;top:0rem;left:34rem;
+    display:flex;
+    flex-direction:column;flex-wrap:wrap;
+    background:#fff;z-index:5;height:30rem;width:30rem;
+    list-style:none;overflow:hidden;
+    padding-left:2rem;
+ }
+ .my_hide{
+  visibility:hidden;
+ } 
+ #carousel div.aside-item ul a{
+     display:block;
+     width:13rem;
+     height:5rem;
+     border-radius:0.2rem;
+     margin-bottom:1.5rem;
+     text-decoration:none;
+     line-height:5rem; 
+ }
+ #carousel div.aside-item ul li:nth-child(1) a,
+ #carousel div.aside-item ul li:nth-child(5) a{
+     margin-top:2rem;
+ }
+ #carousel div.aside-item ul li a span{
+  display:inline-block;
+   position:relative;top:-2rem;
+   color:#777;
+   font-size:0.8rem;
+}
+
+#carousel div.aside-item ul li:last-child a{
+    text-align:center;
+    background:#0aaeed;
+    width:10rem;
+    height:3rem;
+    border-radius:1rem;
+    color:#fff;
+    margin-top:1rem;
+    line-height:3rem;
+}
+#carousel div.aside-item ul li a:hover{
+    background:#eee;
+}
+#carousel div.aside-item ul:nth-child(2),
+#carousel div.aside-item ul:nth-child(3){
+    height:30rem;width:15rem;
+}
+#carousel div.aside-item ul:nth-child(2) li:nth-child(3) a img{
+    width:5rem;
+    height:5rem;
+}

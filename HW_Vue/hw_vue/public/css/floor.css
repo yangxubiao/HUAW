@@ -1,0 +1,555 @@
+@keyframes chenge {
+  17% {
+    transform: translateY(-20px); }
+  34% {
+    transform: translateY(-40px); }
+  51% {
+    transform: translateY(-60px); }
+  68% {
+    transform: translateY(-80px); }
+  85% {
+    transform: translateY(-100px); }
+  100% {
+    transform: translateY(-120px); } }
+
+#floor {
+  width: 1200px;
+  margin: 0 auto;
+  position: relative;
+  top: -65px;
+  background: #fcfcfc; }
+  #floor ul.products-register {
+    width: 100%;
+    height: 88px;
+    background: #fff;
+    box-sizing: border-box;
+    margin-bottom: 20px; }
+    #floor ul.products-register li {
+      float: left; }
+    #floor ul.products-register .products-register-left {
+      width: 23%;
+      height: 88px;
+      box-sizing: border-box;
+      padding: 15px 15px;
+      border-right: 1px solid #f0f0f0; }
+      #floor ul.products-register .products-register-left div {
+        width: 210px; }
+        #floor ul.products-register .products-register-left div img {
+          width: 52px;
+          height: 52px;
+          vertical-align: top; }
+        #floor ul.products-register .products-register-left div span {
+          font-size: 15px;
+          margin-left: 5px; }
+          #floor ul.products-register .products-register-left div span a {
+            color: #333;
+            text-decoration: none; }
+            #floor ul.products-register .products-register-left div span a:hover {
+              color: #cb242b; }
+        #floor ul.products-register .products-register-left div div {
+          position: absolute;
+          top: 15px;
+          left: 75px;
+          width: 13%; }
+          #floor ul.products-register .products-register-left div div a.new {
+            display: inline-block;
+            margin-top: 7px;
+            margin-left: 7px;
+            font-size: 14px;
+            border: 1px solid #e47b7f;
+            width: 66px;
+            height: 20px;
+            color: #de5b60;
+            background: #fff;
+            line-height: 20px;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 5px 5px 5px 5px; }
+            #floor ul.products-register .products-register-left div div a.new:hover {
+              color: #fff;
+              background: #de5b60; }
+          #floor ul.products-register .products-register-left div div a.new.a2 {
+            color: #fde4b3;
+            background: #595454;
+            border: 1px solid #595454; }
+            #floor ul.products-register .products-register-left div div a.new.a2:hover {
+              opacity: 0.9; }
+    #floor ul.products-register li:nth-child(2) {
+      width: 56%;
+      height: 88px;
+      border-right: 1px solid #f0f0f0; }
+      #floor ul.products-register li:nth-child(2) ul {
+        width: 100%;
+        box-sizing: border-box;
+        padding: 15px 15px 0 15px;
+        height: 88px; }
+        #floor ul.products-register li:nth-child(2) ul li {
+          float: left;
+          width: 104px;
+          height: 64px; }
+          #floor ul.products-register li:nth-child(2) ul li a {
+            display: block;
+            width: 84px;
+            height: 64px;
+            text-decoration: none; }
+            #floor ul.products-register li:nth-child(2) ul li a div:first-child {
+              width: 42px;
+              height: 42px;
+              margin: 0 auto; }
+            #floor ul.products-register li:nth-child(2) ul li a div:last-child {
+              width: 84px;
+              height: 24px;
+              line-height: 24px;
+              font-size: 14px;
+              color: #777;
+              text-align: center; }
+              #floor ul.products-register li:nth-child(2) ul li a div:last-child:hover {
+                color: #cb242b; }
+    #floor ul.products-register li:nth-child(3) {
+      width: 250px;
+      height: 88px; }
+      #floor ul.products-register li:nth-child(3) .products-register-bottom-top {
+        width: 100%;
+        height: 43px;
+        box-sizing: border-box;
+        padding: 10px 10px; }
+        #floor ul.products-register li:nth-child(3) .products-register-bottom-top .products-register-bottom-top-left {
+          width: 33px;
+          height: 20px;
+          float: left; }
+          #floor ul.products-register li:nth-child(3) .products-register-bottom-top .products-register-bottom-top-left a {
+            font-size: 16px;
+            text-decoration: none;
+            color: #777; }
+        #floor ul.products-register li:nth-child(3) .products-register-bottom-top .products-register-bottom-top-right {
+          width: 185px;
+          height: 20px;
+          float: left;
+          margin-left: 8px; }
+          #floor ul.products-register li:nth-child(3) .products-register-bottom-top .products-register-bottom-top-right ul {
+            width: 185px;
+            height: 20px;
+            overflow: hidden; }
+            #floor ul.products-register li:nth-child(3) .products-register-bottom-top .products-register-bottom-top-right ul li {
+              width: 185px;
+              height: 20px;
+              overflow: hidden;
+              text-overflow: ellipsis;
+              white-space: nowrap;
+              margin-bottom: 10px;
+              animation: chenge 25s linear infinite; }
+              #floor ul.products-register li:nth-child(3) .products-register-bottom-top .products-register-bottom-top-right ul li a {
+                color: #6f6f6f;
+                font-size: 12px;
+                text-decoration: none; }
+                #floor ul.products-register li:nth-child(3) .products-register-bottom-top .products-register-bottom-top-right ul li a:hover {
+                  color: #cb242b;
+                  box-shadow: 0px 0px 5px 3px #ddd; }
+      #floor ul.products-register li:nth-child(3) .products-register-bottom-bottom {
+        width: 248px;
+        height: 45px; }
+        #floor ul.products-register li:nth-child(3) .products-register-bottom-bottom ul {
+          width: 248px;
+          height: 25px;
+          padding: 10px 0; }
+          #floor ul.products-register li:nth-child(3) .products-register-bottom-bottom ul li {
+            float: left;
+            margin-left: 6.8px; }
+            #floor ul.products-register li:nth-child(3) .products-register-bottom-bottom ul li img {
+              vertical-align: middle; }
+          #floor ul.products-register li:nth-child(3) .products-register-bottom-bottom ul li:nth-child(2), #floor ul.products-register li:nth-child(3) .products-register-bottom-bottom ul li:nth-child(3) {
+            width: 79.2px;
+            height: 24.2px; }
+  #floor h2.floot-title {
+    width: 1200px;
+    margin: 0 auto;
+    height: 90px;
+    box-sizing: border-box;
+    padding: 50px 0;
+    font-size: 26px;
+    color: #333;
+    font-weight: 500; }
+
+* {
+  margin: 0;
+  padding: 0; }
+
+#floor1 {
+  width: 1200px;
+  margin: 0 auto;
+  position: relative;
+  height: 200px; }
+  #floor1 a {
+    display: inline-block;
+    width: 290px;
+    height: 200px;
+    border-radius: 10px;
+    margin-left: 5px;
+    transition: all 0.5s linear; }
+    #floor1 a:hover {
+      box-shadow: 0 0 4px 3px #ddd;
+      transform: translateY(-10px); }
+
+* {
+  margin: 0;
+  padding: 0; }
+
+a {
+  text-decoration: none; }
+
+#floor #floor2 {
+  width: 1200px;
+  height: 604px; }
+  #floor #floor2 a {
+    transition: all 0.5s linear; }
+    #floor #floor2 a:hover {
+      box-shadow: 0px 0px 4px 3px #ccc;
+      transform: translateY(-10px); }
+  #floor #floor2 ul li:first-child {
+    transition: all 0.5s linear; }
+    #floor #floor2 ul li:first-child:hover {
+      box-shadow: 0px 0px 4px 3px #ccc;
+      transform: translateY(-10px); }
+    #floor #floor2 ul li:first-child img {
+      display: inline-block;
+      width: 230px;
+      height: 592px;
+      transition: all 0.5s linear; }
+      #floor #floor2 ul li:first-child img:hover {
+        box-shadow: 0px 0px 4px 3px #ccc;
+        transform: translateY(-10px); }
+  #floor #floor2 ul li {
+    float: left; }
+  #floor #floor2 ul li + li {
+    margin-left: 12px;
+    margin-bottom: 12px; }
+    #floor #floor2 ul li + li a {
+      display: inline-block;
+      width: 230px;
+      height: 290px;
+      background: #f9f9f9;
+      text-align: center;
+      transition: all 0.5s linear; }
+      #floor #floor2 ul li + li a span {
+        display: block;
+        padding: 0 9px;
+        margin: 0 auto;
+        height: 22px;
+        width: 44px;
+        box-sizing: border-box;
+        line-height: 22px;
+        color: #fff;
+        border-radius: 0 0 6px 6px;
+        background: #FF6A6E; }
+      #floor #floor2 ul li + li a div:nth-child(2) {
+        margin-top: 15px;
+        margin-bottom: 10px; }
+      #floor #floor2 ul li + li a div:nth-child(3) {
+        width: 210px;
+        margin: 0 auto;
+        padding: 0;
+        height: 21px;
+        font-size: 14px;
+        color: #222;
+        line-height: 21px; }
+      #floor #floor2 ul li + li a p:nth-child(4) {
+        color: #777;
+        font-size: 12px;
+        text-align: center; }
+      #floor #floor2 ul li + li a p:nth-child(5) {
+        margin-top: 10px;
+        color: #d0021b;
+        font-size: 14px; }
+      #floor #floor2 ul li + li a img {
+        border: 0;
+        width: 150px;
+        height: 150px; }
+
+#floor #floor03 {
+  width: 1200px;
+  height: 310px;
+  position: relative;
+  margin-bottom: 30px;
+  overflow: hidden; }
+  #floor #floor03 a.lr {
+    position: absolute;
+    top: 32%;
+    left: 0;
+    width: 1.5rem;
+    height: 4rem;
+    background: #f0f0f0;
+    text-align: center;
+    line-height: 4rem;
+    border-radius: 5px; }
+    #floor #floor03 a.lr:hover {
+      background: rgba(0, 0, 0, 0.6); }
+  #floor #floor03 a.lr2 {
+    top: 32%;
+    left: 98%; }
+  #floor #floor03 ul.floor03-ul {
+    height: 311px; }
+    #floor #floor03 ul.floor03-ul li:first-child {
+      margin: 0;
+      padding: 0; }
+    #floor #floor03 ul.floor03-ul li.floor03-item {
+      float: left;
+      width: 242px;
+      box-sizing: border-box; }
+      #floor #floor03 ul.floor03-ul li.floor03-item a {
+        width: 232px;
+        height: 295px;
+        display: inline-block;
+        background: #fff;
+        border-radius: 20px;
+        text-align: center;
+        margin-top: 10px;
+        transition: all 0.5s linear; }
+        #floor #floor03 ul.floor03-ul li.floor03-item a:hover {
+          box-shadow: 0px 0px 4px 3px #ccc;
+          transform: translateY(-10px); }
+        #floor #floor03 ul.floor03-ul li.floor03-item a span {
+          display: block;
+          padding: 0 9px;
+          margin: 0 auto;
+          height: 22px;
+          width: 44px;
+          box-sizing: border-box;
+          line-height: 22px;
+          color: #fff;
+          border-radius: 0 0 6px 6px;
+          background: #FF6A6E; }
+        #floor #floor03 ul.floor03-ul li.floor03-item a div:nth-child(2) {
+          width: 230px;
+          height: 205px;
+          position: relative;
+          text-align: center;
+          margin: 20px 0 0 0;
+          margin-right: 0px; }
+          #floor #floor03 ul.floor03-ul li.floor03-item a div:nth-child(2) img {
+            width: 150px;
+            height: 150px; }
+          #floor #floor03 ul.floor03-ul li.floor03-item a div:nth-child(2) p {
+            font-size: 14px;
+            line-height: 36px;
+            position: absolute;
+            bottom: 0px;
+            width: 100%;
+            background: #f3f3f3;
+            color: #777; }
+        #floor #floor03 ul.floor03-ul li.floor03-item a div:nth-child(3) {
+          color: #333;
+          height: 24px;
+          padding-top: 10px;
+          background: #fcfcfc;
+          width: 231px; }
+        #floor #floor03 ul.floor03-ul li.floor03-item a p:last-child {
+          font-size: 14px;
+          color: #d0021b;
+          line-height: 21px;
+          background: #fcfcfc; }
+
+#floor #floor4 {
+  width: 1200px;
+  height: 120px;
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 30px; }
+  #floor #floor4 ul img {
+    width: 1200px; }
+  #floor #floor4 ul:first-child {
+    height: 120px; }
+    #floor #floor4 ul:first-child li {
+      float: left; }
+  #floor #floor4 ul:last-child {
+    position: absolute;
+    top: 85%;
+    left: 92%;
+    width: 4rem;
+    height: 1rem; }
+    #floor #floor4 ul:last-child li {
+      float: left;
+      width: 0.7rem;
+      height: 0.7rem;
+      margin-left: 0.2rem;
+      border: 2px solid #f0f0f0;
+      border-radius: 50%; }
+
+.active {
+  background: #d0021b;
+  box-shadow: 0px 0px 4px 3px  #d0021b; }
+
+#floor #floor5 {
+  width: 1200px; }
+  #floor #floor5 .floor5-top {
+    width: 1200px;
+    height: 80px;
+    box-sizing: border-box;
+    padding: 30px 0; }
+    #floor #floor5 .floor5-top h2 {
+      font-size: 26px;
+      color: #333;
+      float: left;
+      width: 104px; }
+    #floor #floor5 .floor5-top .floor5-top-center {
+      width: 1200px;
+      height: 35px;
+      line-height: 35px; }
+      #floor #floor5 .floor5-top .floor5-top-center li {
+        float: left;
+        margin-left: 18px; }
+        #floor #floor5 .floor5-top .floor5-top-center li a {
+          color: #999;
+          font-size: 14px; }
+          #floor #floor5 .floor5-top .floor5-top-center li a:hover {
+            color: #cb242b; }
+      #floor #floor5 .floor5-top .floor5-top-center li:last-child {
+        margin-left: 5.5rem; }
+        #floor #floor5 .floor5-top .floor5-top-center li:last-child a {
+          color: #333;
+          font-size: 16px; }
+          #floor #floor5 .floor5-top .floor5-top-center li:last-child a:hover {
+            color: #cb242b; }
+          #floor #floor5 .floor5-top .floor5-top-center li:last-child a span {
+            font-size: 20px;
+            color: #333; }
+  #floor #floor5 .floor5-middle {
+    width: 100%; }
+    #floor #floor5 .floor5-middle a {
+      transition: all 0.5s linear; }
+      #floor #floor5 .floor5-middle a:hover {
+        box-shadow: 0px 0px 4px 3px #ccc;
+        transform: translateY(-10px); }
+    #floor #floor5 .floor5-middle ul:after {
+      content: "";
+      display: block;
+      clear: both; }
+    #floor #floor5 .floor5-middle ul li:first-child {
+      transition: all 0.5s linear; }
+      #floor #floor5 .floor5-middle ul li:first-child:hover {
+        box-shadow: 0px 0px 4px 3px #ccc;
+        transform: translateY(-10px); }
+    #floor #floor5 .floor5-middle ul li {
+      float: left; }
+    #floor #floor5 .floor5-middle ul li:nth-child(5) {
+      margin-left: 0; }
+    #floor #floor5 .floor5-middle ul li + li {
+      margin-left: 12px;
+      margin-bottom: 12px; }
+      #floor #floor5 .floor5-middle ul li + li img {
+        width: 150px;
+        height: 150px; }
+      #floor #floor5 .floor5-middle ul li + li a {
+        display: inline-block;
+        width: 230px;
+        height: 290px;
+        background: #f9f9f9;
+        text-align: center;
+        transition: all 0.5s linear; }
+        #floor #floor5 .floor5-middle ul li + li a span {
+          display: block;
+          margin: 0 auto;
+          height: 22px;
+          width: 44px;
+          box-sizing: border-box;
+          line-height: 22px;
+          color: #fff;
+          border-radius: 0 0 6px 6px;
+          background: #FF6A6E;
+          margin-bottom: 0rem; }
+        #floor #floor5 .floor5-middle ul li + li a div:nth-child(2) {
+          margin-top: 15px;
+          margin-bottom: 10px; }
+        #floor #floor5 .floor5-middle ul li + li a div:nth-child(3) {
+          width: 210px;
+          margin: 0 auto;
+          padding: 0;
+          height: 21px;
+          font-size: 14px;
+          color: #222;
+          line-height: 21px; }
+        #floor #floor5 .floor5-middle ul li + li a p:nth-child(4) {
+          color: #777;
+          font-size: 12px;
+          text-align: center; }
+        #floor #floor5 .floor5-middle ul li + li a p:nth-child(5) {
+          margin-top: 10px;
+          color: #d0021b;
+          font-size: 14px; }
+
+#floor #floor6 {
+  width: 1200px;
+  height: 311px;
+  position: relative;
+  margin-bottom: 30px;
+  overflow: hidden; }
+  #floor #floor6 button.lr {
+    outline: none;
+    position: absolute;
+    top: 32%;
+    left: 0;
+    width: 1.5rem;
+    height: 4rem;
+    background: #f0f0f0;
+    text-align: center;
+    line-height: 4rem;
+    border-radius: 5px; }
+    #floor #floor6 button.lr:hover {
+      background: rgba(0, 0, 0, 0.6); }
+  #floor #floor6 button.lr2 {
+    top: 32%;
+    left: 98%; }
+  #floor #floor6 ul {
+    height: 311px;
+    transition: all 2s linear; }
+    #floor #floor6 ul li {
+      float: left;
+      width: 202px;
+      box-sizing: border-box; }
+      #floor #floor6 ul li a {
+        width: 190px;
+        height: 240px;
+        display: inline-block;
+        text-align: center;
+        background: #fcfcfc;
+        border-radius: 10px;
+        margin-top: 10px;
+        transition: all 0.5s linear; }
+        #floor #floor6 ul li a:hover {
+          box-shadow: 0px 0px 4px 3px #ccc;
+          transform: translateY(-10px); }
+        #floor #floor6 ul li a span {
+          display: block;
+          padding: 0 9px;
+          margin: 0 auto;
+          height: 22px;
+          width: 44px;
+          box-sizing: border-box;
+          line-height: 22px;
+          color: #8b3232;
+          border-radius: 0  6px 6px;
+          background: #FF6A6E; }
+        #floor #floor6 ul li a div:nth-child(2) {
+          width: 195px;
+          height: 205px;
+          position: relative;
+          text-align: center;
+          margin-top: 20px; }
+          #floor #floor6 ul li a div:nth-child(2) img {
+            width: 120px;
+            height: 120px; }
+          #floor #floor6 ul li a div:nth-child(2) p {
+            font-size: 14px;
+            line-height: 36px;
+            position: absolute;
+            bottom: 0px;
+            border-radius: 0 0 10px 10px;
+            width: 100%;
+            background: #f3f3f3;
+            color: #777; }
+        #floor #floor6 ul li a div:nth-child(3) {
+          color: #333;
+          height: 24px; }
+        #floor #floor6 ul li a p:last-child {
+          font-size: 14px;
+          color: #d0021b;
+          line-height: 21px; }

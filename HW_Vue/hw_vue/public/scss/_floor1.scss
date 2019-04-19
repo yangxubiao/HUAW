@@ -1,0 +1,19 @@
+*{margin:0;padding:0}
+#floor1{
+    width:1200px;
+    margin:0 auto;
+    position:relative;
+    height:200px;
+       a{
+        display:inline-block;
+        width:290px;
+        height:200px;
+        border-radius:10px;
+        margin-left:5px;
+        transition:all 0.5s linear;
+        &:hover{
+            box-shadow:0 0 4px 3px #ddd;
+            transform:translateY(-10px);
+        }
+    }
+}

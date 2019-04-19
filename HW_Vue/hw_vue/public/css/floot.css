@@ -1,0 +1,121 @@
+#floot {
+  width: 100%;
+  background: #f9f9f9; }
+  #floot #floot-top {
+    width: 1200px;
+    height: 100px;
+    margin: 0 auto;
+    line-height: 100px;
+    border-bottom: 1px solid #f0f0f0;
+    box-sizing: border-box;
+    padding-top: 26px; }
+    #floot #floot-top ul:after {
+      content: "";
+      display: block;
+      clear: both; }
+    #floot #floot-top ul li {
+      width: 298px;
+      height: 51px;
+      line-height: 51px;
+      float: left; }
+      #floot #floot-top ul li div {
+        float: left; }
+      #floot #floot-top ul li a {
+        font-size: 18px;
+        color: #3a3a3a; }
+  #floot #floot-middle {
+    width: 1200px;
+    height: 211px;
+    margin: 0 auto;
+    border-bottom: 1px solid #f0f0f0;
+    box-sizing: border-box;
+    padding: 23px 0; }
+    #floot #floot-middle .floot-middle-left {
+      float: left;
+      width: 180px;
+      height: 160px; }
+      #floot #floot-middle .floot-middle-left p {
+        margin-bottom: 6px; }
+      #floot #floot-middle .floot-middle-left ul li a {
+        font-size: 12px;
+        color: #777; }
+        #floot #floot-middle .floot-middle-left ul li a:hover {
+          color: #ca141d; }
+    #floot #floot-middle .floot-middle-left:nth-child(5) {
+      border-right: 1px solid #f0f0f0; }
+    #floot #floot-middle .floot-middle-right {
+      float: left;
+      width: 286px;
+      height: 160px;
+      text-align: center; }
+      #floot #floot-middle .floot-middle-right h2 {
+        font-weight: 500;
+        color: #575757;
+        margin-bottom: 5px; }
+      #floot #floot-middle .floot-middle-right a {
+        display: block;
+        width: 170px;
+        height: 34px;
+        background: #333;
+        font-size: 14px;
+        color: #fff;
+        line-height: 34px;
+        border-radius: 20px;
+        margin: 0 auto;
+        margin-bottom: 10px; }
+      #floot #floot-middle .floot-middle-right p:nth-child(2) {
+        font-size: 14px;
+        color: #575757;
+        margin-bottom: 15px; }
+      #floot #floot-middle .floot-middle-right p:last-child {
+        line-height: 30px; }
+        #floot #floot-middle .floot-middle-right p:last-child img {
+          position: relative;
+          top: 7px; }
+  #floot #floot-bottom {
+    width: 1200px;
+    height: 130px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    padding-top: 20px; }
+    #floot #floot-bottom .floot-bottom-left {
+      width: 100px;
+      height: 80px;
+      float: left; }
+      #floot #floot-bottom .floot-bottom-left img {
+        width: 82px;
+        height: 20px;
+        margin-top: 5px; }
+    #floot #floot-bottom #floot-bottom-middle {
+      width: 69%;
+      height: 80px;
+      float: left;
+      box-sizing: border-box; }
+      #floot #floot-bottom #floot-bottom-middle ul.floot-bottom-middle-top:after {
+        content: "";
+        display: block;
+        clear: both; }
+      #floot #floot-bottom #floot-bottom-middle ul li + li {
+        margin-left: 15px; }
+      #floot #floot-bottom #floot-bottom-middle ul li {
+        float: left; }
+        #floot #floot-bottom #floot-bottom-middle ul li a {
+          color: #777;
+          font-size: 13px; }
+          #floot #floot-bottom #floot-bottom-middle ul li a:hover {
+            color: #ca141d; }
+      #floot #floot-bottom #floot-bottom-middle ul:nth-child(2) li {
+        margin-left: 3px; }
+        #floot #floot-bottom #floot-bottom-middle ul:nth-child(2) li a, #floot #floot-bottom #floot-bottom-middle ul:nth-child(2) li span {
+          font-size: 12px;
+          color: #a4a4a4; }
+      #floot #floot-bottom #floot-bottom-middle ul:nth-child(3) li {
+        margin: 0; }
+        #floot #floot-bottom #floot-bottom-middle ul:nth-child(3) li a, #floot #floot-bottom #floot-bottom-middle ul:nth-child(3) li span {
+          font-size: 12px;
+          color: #a4a4a4; }
+  #floot #floot-right {
+    width: 185px;
+    height: 50px;
+    float: left;
+    margin-left: 67px; }
