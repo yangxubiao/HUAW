@@ -3309,11 +3309,12 @@ INSERT INTO hw_product_pic VALUES
 (2,79,"img/product_details/sm/product_details_sm07_02_07.png","img/product_details/md/product_details_md07_02_07.png","img/product_details/lg/product_details_lg07_02_07.png");
 
 CREATE TABLE hw_car(
-  uid INT PRIMARY KEY AUTO_INCREMENT,
+  uid INT,
   title VARCHAR(200), 
   price DECIMAL(8,2), 
   pic VARCHAR(100),   
   count INT,          
   pid INT,            
-  lid INT       
+  lid INT,
+  i INT     
 );

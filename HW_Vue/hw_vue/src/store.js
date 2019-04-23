@@ -50,7 +50,9 @@ Vue.use(Vuex)
 
 export default new Vuex.Store({
   state: {
-  
+       user:{
+        lid:1
+       }
   },
   // plugins:[myPlugins({
   //      session:[

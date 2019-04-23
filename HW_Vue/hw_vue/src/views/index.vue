@@ -1363,7 +1363,7 @@ setTimeout(function(){
      created(){ 
          var t=setTimeout(function(){
             localStorage.clear()
-         },1000*60*60*3);
+         },1000*60*30);
        this.axios.get('/index',{
        }).then(response=>{
                        var  index=response.data;

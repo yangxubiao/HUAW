@@ -127,7 +127,7 @@ import store from '@/store'
                     }
               })
           }else{
-            console.log(-1);
+            alert("系统繁忙！！！ 请关闭页面重新打开,谢谢配合")
           }
         },
       },

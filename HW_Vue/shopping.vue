@@ -11,7 +11,7 @@
            <router-link to="/login">登录</router-link>
            </div>
         </div>
-        <div id="shopping-middle1"  v-show="show">
+        <div id="shopping-middle1" >
             <ul class="first1">
               <li class="first">
                 <label>
@@ -24,11 +24,11 @@
               <li>小计</li> 
               <li>操作</li>
           </ul>
-           <div class="middle-middle" >
+           <div class="middle-middle">
               <ul>
                   <li v-for="(item,i) of list" :key="i">   
                      <label>
-                         <input type="checkbox" :checked="item.cd" @click="cd($event,i)">
+                         <input type="checkbox" :checked="item.cd" @click="cd(i)">
                      </label>
                       <img :src="item.pic" alt="">
                        <div>
@@ -40,7 +40,7 @@
                                <button @click="add(i)">+</button>
                           </div>
                              <span class="price1"  v-text="'￥'+(item.price*item.count).toFixed(2)"></span>
-                             <span class="delete" @click=removeAll(i)>删除</span>
+                             <span class="delete" >删除</span>
                         </div>
                    </li>
               </ul>
@@ -51,7 +51,7 @@
                   <input type="checkbox" v-model="cds"  @click="toggleCd($event)">&nbsp;&nbsp;&nbsp;全选
                 </label>
            </li>
-           <li class="first2-item1" @click="removeAll">删除</li>
+           <li class="first2-item1">删除</li>
             <li class="first2-item2">
               <a href="javascipt:;">立即结算</a>
             </li>
@@ -61,8 +61,8 @@
             </li>
          </ul>
         </div>
-       <div id="shopping-middle"  v-show="car">
-         <div class="shopping-middle" >
+       <div id="shopping-middle" >
+         <div class="shopping-middle">
              <img src="img/shopping/shopping-logo.png" alt="">
              <p>您的购物车里什么也没有哦~</p>
              <router-link to="/index">去逛逛</router-link>
@@ -73,7 +73,7 @@
       <div id="shopping-bottom">
          <h3>热销推荐</h3>
          <ul>
-              <li v-for="item of navPhone" @click="handleClick(item.lid)" :key="item.lid">
+              <li v-for="item of navPhone" @click="handleClick(item.lid)">
                 <div>
                     <img :src="item.pic" alt="">  
                  </div> 
@@ -87,97 +87,41 @@
      <my-footer></my-footer>
   </div>
  </template>
+ 
+ 
+ 
  <script>
  import store from '@/store.js'
    export default {
        data(){
            return {
-             car:false,
-             show:true,
              cds:true,
              shoppingText:"您还没有登录！登录后可查看之前加入的商品",
              visible:true,
              user:{},
              navPhone:[],
              list:[{title:"",price:0}],
+            //  state:this.$stora
            }
        },
        methods:{
-         removeAll(y){
-       if(typeof(y)!="object"){
-              for(var j=0;j<this.list.length;j++){
-                        if(j==y){
-                         this.list[y].cd=true;
-                        console.log(this.list[y].cd)
-                       }else if(j!=y){
-                          this.list[j].cd=false;
-                        console.log(this.list[j].cd)
-                        }   
-                 }
-                    this.deletes();
-                  
-            }else{
-                    this.deletes();
-                   
-             }
-          },
         toggleCd(e){
            for(var i=0;i<this.list.length;i++){
             this.list[i].cd=e.target.checked 
            }
          },
-         deletes(){  
-            var that=this;      
-           var p=[];
-           var i=[];
-           var l=[];
-           var uid=0;
-          for(var o=0,c=0;o<this.list.length;o++){
-                    if(this.list[o].cd==true){
-                           c++;
-                    }
-          }
-          if(c!=0){
-              for(var u of this.list){
-                 if(u.cd==true){
-                     uid=u.uid;
-                     p.push(u.pid);
-                     l.push(u.lid);
-                     i.push(u.i);
-                 }
-              }
-          }else{
-            alert("请选中您要删除的商品")
-            return;
-          } 
-                 p=p.join();
-                 i=i.join();
-                 l=l.join();
-           
-            if(confirm("是否删除勾选的商品")){
-              var url="/product/deletes?uid="+uid+"&pid="+p+"&lid="+l+"&i="+i;
-                  this.axios.get(url).then(res=>{
-                        that.loadMore();
-                  })
-            }else{
-              return;
-            }
-         },
-         cd(e,i){
+         cd(i){
+             
               if(this.list[i].cd==true){
                 this.cds=false;
-                this.list[i].cd=false
-               var count=this.list[i].count
-               var price=this.list[i].price;
-            console.log(this.count);
-              }else{
+               this.list[i].cd=false
+              }else
                this.list[i].cd=true;
                var sum=0;
-              for(var i=0;i<this.list.length;i++){
+             for(var i=0;i<this.list.length;i++){
                 if(this.list[i].cd!=false){
-                       sum++;
+                      sum++;
                 }
-             }
              }
            if(sum==this.list.length){
              this.cds=true;
@@ -200,7 +144,6 @@
                        pid: pid,
                        lid: 1
                    },
-                 
                })
              },
          load(){
@@ -216,17 +159,13 @@
              var uid=JSON.parse(localStorage.getItem("user")).uid
              var url="/product/loadMore?uid="+uid;
                this.axios.get(url).then(res=>{
-                          if(res.data.code==1){
-                             this.car=false;
-                     for(var item of res.data.data){
-                           item.cd=true;
-                      }
-                      this.list=res.data.data
-                  }else{
-                        this.show=false;
-                        this.car=true;
-                  }
+                   for(var item of res.data.data){
+                         item.cd=true;
+                    }
+                     this.list=res.data.data
+                  
                })
+           
            }
          }
        },
@@ -245,20 +184,11 @@
           }
        },
        created(){
-        if(localStorage.getItem("user")==null){
-            localStorage.setItem("user",0);
-             this.show=false;
-             this.car=true;
-        }else{
-          if(JSON.parse(localStorage.getItem("user")).uid!=undefined){
-                          this.visible=false;
-                    }else{
-                          this.show=false;
-                          this.car=true;
-                   }
-           }
-              this.load();
-              this.loadMore();
+                  if(JSON.parse(localStorage.getItem("user")).uid!=undefined){
+                         this.visible=false;
+                  }
+            this.load();
+           this.loadMore();
        },
       watch:{
          user:{

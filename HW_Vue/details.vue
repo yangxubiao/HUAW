@@ -295,8 +295,7 @@ export default {
               this.product=product.product;
               this.pics=product.pics;
               this.ulSmStyle.width=this.pics.length*70+"px"
-              this.p=localStorage.getItem('q');
-                
+                  this.p=localStorage.getItem('q');
             })
        },
         dong(e){

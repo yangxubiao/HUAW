@@ -462,8 +462,9 @@
 
 
 <script>
-import store from '@/store.js'
+ import store from '@/store.js'
 export default {
+     inject:['reload'],
      data() {
          return {
                toggle:false,
@@ -485,9 +486,12 @@ export default {
      methods:{
          destroyS(){
              localStorage.setItem("user",0)
-                this.show=false;
+                this.$store.state.user.lid=0;
+                console.log(this.$store.state.user.lid)
+                 this.show=false;
+                this.reload();
          },
-         l(){      
+         l(){
              this.toggle=!this.toggle;
          },
            handleClick(pid) {
@@ -499,6 +503,9 @@ export default {
                      lid: 1
                  }
               })
+              setTimeout(()=>{
+                this.reload();
+              },0)
           },
        login(){
           if(this.obj.uname.trim()!=""&&this.obj.upwd.trim()!=""){
@@ -509,6 +516,7 @@ export default {
                      this.user=JSON.parse(localStorage.getItem('user'));
                         this.toggle=false;
                           this.show=true;
+                           this.reload();
                     }else{
                        this.text="用户名或密码有误"
                     }
@@ -519,7 +527,7 @@ export default {
        }
      },    
      created(){
-     
+         console.log(100);
           this.axios.get('/index',{
        }).then(response=>{
             var product=response.data.product;
